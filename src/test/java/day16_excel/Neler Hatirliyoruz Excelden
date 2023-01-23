@@ -1,0 +1,28 @@
+1) Excel Okuma
+2)Excel Yazdirma
+
+    Excel Okuma ve Excel Yazdirma (microsoft dosyalari ile alakali ) iletisime gecmek icin:
+     apachi poi dependency's kullanilir.
+
+
+    4 Tane onemli Sey vardir ;   Excelden veriyi okumak icin
+
+     WORKBOOK
+     SHEET
+     ROW
+     CELL      Bu sirayi takip etmeliyim
+
+     Bir exceldeki Satir Sayisini nasil buluruz?
+
+     toplam satir sayisini bulan method vardir
+        getPhysicalNumberOfRows
+        getLastRowNumber
+
+        **Su anki projende exceli nasil kullandin
+          *Test case lerinde  cesitli datalar cekerken.
+          Orn/Kullanici adi sifre,gibi datalari excelde tutuyoruz bunlari kullanmak icin excelden cekiyorum
+          ve test case lerimde kullaniyorum
+          *Data lari excelde tumamin faydasi ,datalarin derli toplu bir yerde olmasi,
+          data guvenligive data kayiplarina enbgel olmak
+
+

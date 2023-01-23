@@ -1,0 +1,6 @@
+
+   Log4j nedir:tamamen loglama işlemi yapmak icin kullanilan bir API dir
+   Cesitli seviyelerde loglama yapilabilir:Error,warn,info,fatal...
+   Bu sout a benzer ama log4j ile dosyayy detayli bir sekilde yazdirma islemi yapilabilir
+   Suanda projemde lşog4j2 kullanmaktayim
+   sout u kullanma ihtiyacini nerde hissedersek orda kullanabiliriz

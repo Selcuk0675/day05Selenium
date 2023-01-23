@@ -1,0 +1,19 @@
+
+
+    TestNG: Next Generation
+
+     Beles
+     Test Kutuphanesidir
+     Sadece JAVA ile calisir
+     En az JAva 7 ve ustu lazim
+
+     https://testng.org/doc/documentation-main.html
+
+     Advance dir
+      Daha fazla data akis kontrolu verir
+      Priority yapacaz junit te bu yok
+      Paralel ve cross-browser test yapacaz
+      Data provider la data driven testing imkani saglar
+
+      https://files.slack.com/files-pri/T03MPM084DV-F04KZ25UUR0/image.png
+

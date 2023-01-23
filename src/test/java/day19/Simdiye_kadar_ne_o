@@ -1,0 +1,89 @@
+
+  SU ANA KADAR OGRENDİGİMİZ DİLLER:
+    JAVA,Lambda,xml,SQL,HTML-CSS....
+
+    FRAMEWORK:
+     Hangi tur framework kullandik:
+      Selenyum framework degildir JUNİT,TESTNG,CUCUMBER
+
+     DESİGN PATTERN(FRAMEWORK İLE ALAKALİ)
+      POM(Page Object Model)
+
+     ARACLAR/GERECLER(TOOLS)
+      IT ile alakali hersey yazilabilir
+       Selenyum WebDriver
+       TestNG
+       Cucumber
+       Maven
+       POstGreSQL
+       JDBC
+       INTELLİJ;ECLİPSe
+       JİRA
+       GİTHUP
+       POSTman
+       Jenkins
+       Jmeter
+       Selenyum-Grid
+       AWC E2E
+       VC CODe
+       BitBucket
+       API
+
+     VersionControlSySTEm
+        Gİt ,Bitbucket(gitin aynisi jirayla entegre daha kolay oluyo ve ucretli)
+
+     Front End Testing
+      Selenyum WebDriver la yaptik
+
+     API
+      postman for manuel testing,Restful for automation
+
+     Backend/Database Testing:
+      SQL,JDBC
+
+     Continious Intergratrion(CI),Continious dEPLOYMENT(CD):
+      Jenkins
+
+     Remote Testing:
+      Selenyum Grid,Jenkins
+
+      https://files.slack.com/files-pri/T03MPM084DV-F04KYTFM0R1/image.png
+
+
+
+
+Diller(Languages):
+JAVA, Lamda, xml, SQL, HTML, CSS, …
+Frameworks:
+JUnit(gorduk), TestNG(Basliyoruz), Cucumber(Ogrenecez)
+Design Pattern:
+Page Object Model(POM)
+Version Control System:
+Git, Bitbucket(ucretli, kara ile entegresi daha guzel)
+Front End Testing:
+Selenium WebDriver
+API Testing:
+Postman for manual testing, Restful for automation
+Backend/Database Testing:
+SQL, JDBC
+Continuous Integration(CI), Continuous Deployment(CD):
+Jenkins
+Remote Testing:
+Selenium Grid, Jenkins
+Arac/Gerecler(Tools)
+Selenium WebDriver
+Maven
+JUnit, TestNG, Cucumber
+PostGreSQL
+JDBC
+IntelliJ, Eclipse, VS Code
+JIRA
+Jmeter
+Postman
+Restful API
+Jenkins
+Selenium Grid
+Git, Github, Bitbucket, AWC E2E
+
+
+well rounded

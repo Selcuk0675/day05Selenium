@@ -1,0 +1,38 @@
+
+  JavaScriptExecutors İLE İLGİLİ NE SORARLAR
+
+  1:JS nedir?
+  2:Ne zaman ve nerde kullailir?
+  3:Sayfayi asagi veya yukari kaydirma işlemi seleniumda nasil yapilir?
+  4:Bir kutucuktaki elemeanin metni nasil alinabilir?
+  5:Seleniumda click yaparken problem yasadigin oldu mu ?
+  6:Selenium otomasyonunda ne turlu problemlerle karsilastiniz?
+
+  1:JS nedir?
+   *Selenyumdan gelen ve Java Script codlarini calistirmaya yarayan bir interface dir
+   *Normal selenyum metodlari yeterli olmadigi zamanlarda kullanilir
+
+  2:Ne zaman ve nerde kullailir?
+   *Normal selenyum metodlari yeterli olmadigi zamanlarda kullanilir.
+   *Orn: Bazi butonlara tiklanmada problem olabilir yada
+   belirli bir web elenentin gorunur olacak sekilde kaydirma işlemi
+   yada input kutularindaki degerlerini almada kullanilabilir
+
+  3:Sayfayi asagi veya yukari kaydirma işlemi seleniumda nasil yapilir?
+   *Actions selenyumdan yada JS metodlari ile kaydirma işlemleri yapilabilir
+   *Orn:Actionslarda pageUp,PageDown,ArrowUP-Down yada Js teki scrollIntoView(true)ile yapilabilir
+   Ama ben reusable metodlarini kullanarak bu işlemlerin iyapabilirim
+
+   4:Bir kutucuktaki elemeanin metni nasil alinabilir?
+    *Js ile alabiliriz.Cunku Js executor ile attribute degerlerini alma imklanimiz var.
+     getText() bu durumlarda calismaz
+
+    5:Seleniumda click yaparken problem yasadigin oldu mu ?
+     *Bazen yanliş locator yada wait problemi gibidurumlarda problem yasadim.
+     ****Bazen gizli(hidden) elementlere tiklarken de problem yasadim ve Js Executor kullndim ve problemi cozdum
+
+   **** 6:Selenium otomasyonunda ne turlu problemlerle karsilastiniz? ****
+    *teknik problemler ,yanliş locator,wait,alert,iframe,pop-up seklindeki reklam bildirimleri ,
+      hidden elementlere tiklama,multiple window
+    *Takimla ilgili problemler:(Cok gundeme getirilmemeli).Developer bazen buldugum buglari kabul etmiyordu
+     cozum :takimla beraber degerlendirip fikir birligine variyorduk

@@ -1,0 +1,4 @@
+2023-01-20 23:17:46,661 FATAL d.C01_Log4j [main] Fatal Log!
+2023-01-20 23:17:46,664 ERROR d.C01_Log4j [main] error Log!
+2023-01-20 23:17:46,664 WARN d.C01_Log4j [main] warn Log!
+2023-01-20 23:17:46,664 INFO d.C01_Log4j [main] info Log!

@@ -1,85 +1,29 @@
-import io.github.bonigarcia.wdm.WebDriverManager;
-import org.junit.Assert;
-import org.junit.Before;
+import com.github.javafaker.Faker;
 import org.junit.Test;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.interactions.Actions;
+import utilities.TestBase;
 
-import java.time.Duration;
-import java.util.List;
-
-public class C01 {
-    /*
-        1. What is Dropdown?
-        Draopdown liste olusturmak icin kullanilir
-
-        2. How to handle dropdown elements?Dropdown nasil automate edilir
-            - locate
-            - Select objesi
-            - Select methods
-          Not: select objesi olusturma nedenim,dropdownlarin Select classi ile olusturulmasi
-        3. Tum dropdown seceneklerini nasil print ederiz
-          -  Tum dropdown elementlerini getOptions() methodu ile listeye koyariz
-          - sonra secenekleri loop ile yazdirabiliriz
-        4. Bir ssecenegin secili oldugunu otomate etmek icin ne yapilir?
-        orn: Gun olarak 10 u secdik ama ya secilmediyse?
-        getFirstSelectedOptions()  secili olan secenegi return edeer
-     */
-    WebDriver driver;
-    @Before
-    public void before(){
-        WebDriverManager.chromedriver().setup();
-        driver=new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-        driver.manage().window().maximize();
-        driver.get("https://testcenter.techproeducation.com/index.php?page=dropdown");
-    }
+public class C01 extends TestBase {
     @Test
-    public void selectedByIndextest(){
-        //        Dogun yilini, ayini, ve gununu su sekilde secer : 2000, January, 10
-        WebElement year=driver.findElement(By.id("year"));
-        Select dropdownYear=new Select(year);
-        dropdownYear.selectByVisibleText("2000");
-        //dropdownYear.selectByValue("2000");
-        //dropdownYear.selectByIndex(22);
+    public void name() {
 
-        WebElement month=driver.findElement(By.id("month"));
-        Select dropdownMonth=new Select(month);
-        dropdownMonth.selectByVisibleText("January");
-
-        WebElement day=driver.findElement(By.id("day"));
-        Select dropdownDay=new Select(day);
-        dropdownDay.selectByIndex(11);
+        Faker faker=new Faker();
+        String email=faker.internet().password();
+        // 'https://www.facebook.com' sayfasina gidiniz
+        driver.get("https://www.facebook.com");
+        // yeni hesap olustur butonuna basin
+        driver.findElement(By.xpath("//*[@class='_42ft _4jy0 _6lti _4jy6 _4jy2 selected _51sy']")).click();
+        // isim kutusunu locate ediniz
+         WebElement name=driver.findElement(By.xpath("//*[@name='firstname']"));
+        // geriye kalan alanlari TAB ile dolasarak faker bilgilerle formu doldurun
+        Actions actions=new Actions(driver);
+        actions.sendKeys(faker.name().firstName()).sendKeys(Keys.TAB).sendKeys(faker.name().lastName()).
+                sendKeys(Keys.TAB).sendKeys(email).sendKeys(Keys.TAB).sendKeys(email).sendKeys(Keys.TAB).sendKeys(Keys.TAB).
+                sendKeys("12").sendKeys(Keys.TAB).sendKeys("Temmuz").sendKeys(Keys.TAB).sendKeys("2022").
+                sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys(Keys.ARROW_RIGHT).sendKeys(Keys.TAB).
+                sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys(Keys.ENTER).perform();
     }
-    @Test
-    public void printAllState(){
-        //Tum eyaletleri print edelim
-        WebElement state=driver.findElement(By.id("state"));
-        Select dropdownstate=new Select(state);
-
-
-        List<WebElement> printAllState=dropdownstate.getOptions();
-
-        for (WebElement stateList: printAllState){
-            System.out.println(stateList.getText());
-
-
-        }
-
-    }
-    @Test
-    public void getSelected(){
-        //State dropdownindaki varsayilan secili secenegin 'Select a State ' oldugunu verify edelim
-        WebElement SelectState=driver.findElement(By.id("state"));
-        Select dropdowSelectState=new Select(SelectState);
-
-        String verfy=dropdowSelectState.getFirstSelectedOption().getText();
-        Assert.assertEquals("Select a State",verfy);
-
-
-    }
-
 }

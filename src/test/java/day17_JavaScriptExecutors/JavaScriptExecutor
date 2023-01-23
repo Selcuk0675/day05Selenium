@@ -1,0 +1,24 @@
+
+    /*
+           JavaScriptExecutor;JavaScript selenyumun bir parcasi nasilki select ,actions bir parcasiysa bu da bir parcasidir
+            JavaScript kodlarini okumaya yarar Bit API dır
+
+            Selenyum ile bazi web elementleri otomate ederken yeterli olmayabilir.Bu durumlarda JS Executor kullanabiliriz
+             UI ile alakali isleri daha kolay yapabliriz, test ederken Js kullanilir ,Browser JS ile otomate edilebilir.
+             JS HTML kodlarina kolaylikla ulasabilir
+             What can we do withJS?
+             *Click
+             *Scroll
+             *Kullanici adi sifresi girerken
+             *Elementlerin rengini degistirme
+
+             https://files.slack.com/files-pri/T03MPM084DV-F04LDKRUXLY/image.png
+
+             3 tane adim var bunu uygularken;
+              1- driver a cast ediyoruz
+              2-jse.executeScript methodu ile
+
+
+         */
+
+

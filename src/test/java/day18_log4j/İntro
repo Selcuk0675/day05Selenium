@@ -1,0 +1,11 @@
+ /*
+            Selenyum gibi,testNG,Junit gibi ayri bir API dir
+            Log4j:Consola yada bir dosyaya(loglama) yazdirma işlemi yaptigimiz bir API dir
+            sout=Log4j
+            Log4j konsola yazdirabilicegi gibi ayni zamanda frameWork de xml dosyasi olusturp orayada yazdirabiliriz
+            Loglama anindaki zaman bilgisi alinabilir
+            Dosyaya kalici loglama yapilabiir
+            https://files.slack.com/files-pri/T03MPM084DV-F04L99ZG1LH/image.png
+            https://files.slack.com/files-pri/T03MPM084DV-F04KWHB0M0T/image.png
+            https://files.slack.com/files-pri/T03MPM084DV-F04KG4Z0S1M/image.png
+     */
